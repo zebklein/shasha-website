@@ -48,29 +48,77 @@ nav ul li a:hover{
 
 /* #region hero page */
 
-.hero{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    padding: 0 5%;
+.flex-container{
     display: flex;
-    align-items: left;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 15vw;
 }
 
-.header h1{
-    font-size: 37px;
-    padding-top: 70px;
-
-
+.about-container {
+    display: flex;
+    justify-content: space-between; /* Evenly spaces items horizontally */
+    align-items: center; /* Aligns the items vertically in the center */
+    gap: 20px; /* Adds a little space between items */
+    max-width: 80%; /* Limit the container width */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds shadow for aesthetics */
 }
 
-.header h2{
-    font-size: 16px;
-    text-align: right;
+.text-section {
+    max-width: 50%; /* Ensure the text does not take too much space */
+    margin-left: 40px;
 }
 
-.contact-info{
-    
+.about-image {
+    max-width: 100%;
+    width: 30%;
+    height: auto;
+    border-radius: 8px; /* Adds rounded corners */
+    margin-right: 40px;
+}
+
+.grid-container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Evenly space the items horizontally */
+    gap: 20px; /* Space between the boxes */
+    width: 80%; /* Adjust the width of the container */
+    max-width: 1000px; /* Max width for larger screens */
+    padding: 20px;
+}
+
+.grid-item {
+    flex: 1 1 calc(33.33% - 20px); /* 3 equal columns with a little gap */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* To position the line */
+}
+
+/* Add a horizontal line under each item */
+.grid-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Place it at the bottom of each box */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the line */
+    background-color: #ddd; /* Color of the line */
+}
+
+  /* Text styling */
+.grid-item p {
+    font-size: 1.3rem;
+}
+
+  /* Styling for the third row to make font smaller */
+.grid-item.third-row p {
+    font-size: 0.9rem; /* Smaller font size for the third row */
 }
 
 /* #endregion */
