@@ -48,6 +48,11 @@ nav ul li a:hover{
 
 /* #region hero page */
 
+hr{
+    width: 50%;
+    margin: 0 auto
+}
+
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -59,24 +64,25 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-between; /* Evenly spaces items horizontally */
     align-items: center; /* Aligns the items vertically in the center */
-    gap: 20px; /* Adds a little space between items */
     max-width: 80%; /* Limit the container width */
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds shadow for aesthetics */
+    gap: 20px; /* Space between the image and text */
 }
 
 .text-section {
-    max-width: 50%; /* Ensure the text does not take too much space */
-    margin-left: 40px;
+    max-width: 70%; /* Ensure the text does not take too much space */
+    margin-right: 40px;
 }
 
 .about-image {
     max-width: 100%;
-    width: 30%;
+    width: 20%;
     height: auto;
     border-radius: 8px; /* Adds rounded corners */
-    margin-right: 40px;
+    /* margin-left: 100px; */
+    margin: 0;
 }
 
 .grid-container {
@@ -100,6 +106,11 @@ nav ul li a:hover{
     position: relative; /* To position the line */
 }
 
+.grid-item p{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
 /* Add a horizontal line under each item */
 .grid-item::after {
     content: '';
@@ -109,11 +120,6 @@ nav ul li a:hover{
     width: 100%;
     height: 2px; /* Thickness of the line */
     background-color: #ddd; /* Color of the line */
-}
-
-  /* Text styling */
-.grid-item p {
-    font-size: 1.3rem;
 }
 
   /* Styling for the third row to make font smaller */
