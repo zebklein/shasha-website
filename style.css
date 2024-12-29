@@ -7,47 +7,6 @@
     font-weight: normal;
 }
 
-/* #region nav bar */
-
-nav{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    width: 80px;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 40px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    text-shadow: 0 0 .3rem rgba(0,0,0,.6);
-    padding: .5rem 1.2rem;
-    transition: 0.5s;
-    fon
-}
-
-nav ul li a:hover{
-    color: rgb(255, 255, 255);
-}
-
-/* #endregion */
-
-/* #region hero page */
-
 hr{
     width: 50%;
     margin: 0 auto
@@ -58,6 +17,17 @@ hr{
     flex-direction: row;
     justify-content: left;
     margin-left: 15vw;
+}
+
+/* #region about */
+
+.about-image {
+    max-width: 100%;
+    width: 20%;
+    height: auto;
+    border-radius: 8px; /* Adds rounded corners */
+    /* margin-left: 100px; */
+    margin: 0;
 }
 
 .about-container {
@@ -76,14 +46,9 @@ hr{
     margin-right: 40px;
 }
 
-.about-image {
-    max-width: 100%;
-    width: 20%;
-    height: auto;
-    border-radius: 8px; /* Adds rounded corners */
-    /* margin-left: 100px; */
-    margin: 0;
-}
+/* #endregion */
+
+/* #region grid */
 
 .grid-container {
     margin: auto;
@@ -111,7 +76,6 @@ hr{
     text-align: center;
 }
 
-/* Add a horizontal line under each item */
 .grid-item::after {
     content: '';
     position: absolute;
@@ -120,49 +84,6 @@ hr{
     width: 100%;
     height: 2px; /* Thickness of the line */
     background-color: #ddd; /* Color of the line */
-}
-
-  /* Styling for the third row to make font smaller */
-.grid-item.third-row p {
-    font-size: 0.9rem; /* Smaller font size for the third row */
-}
-
-/* #endregion */
-
-
-.philosophy{
-    background-image: url("media/school_of_athens.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.school-of-athens{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.school-of-athens #background{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-}
-
-.school-of-athens .row{
-    display: flex;
-    text-align: center;
-}
-
-.school-of-athens .row .column{
-    align-items: center;
-    flex: 50%;
-}
-
-.school-of-athens .row .column img{
-    padding: 50vh 0;
-    width: 40%;
 }
 
 /* #endregion */
