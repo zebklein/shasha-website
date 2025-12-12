@@ -157,3 +157,17 @@ a {
     text-decoration: none;
     color: #007BFF;
 }
+
+/* Attachments (forms and other downloadable content) */
+.section-attachments {
+    margin-top: 12px;
+    font-size: 1rem;
+}
+.section-attachments strong {
+    display: block;
+    margin-bottom: 6px;
+}
+.section-attachments a {
+    display: inline-block;
+    margin: 6px 0;
+}
